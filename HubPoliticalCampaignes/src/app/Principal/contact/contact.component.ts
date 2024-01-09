@@ -8,16 +8,15 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   abrirEnlace(opt: boolean){
-    let url = "";
-    if(opt){ //what
-      url = 'https://wa.me/+523346502871';
-    }else{ //twitter
-      
-      url = 'https://twitter.com/Basher_dev';
-    }
-
-    window.open(url, '_blank');
-
-
+    setTimeout(() => {
+      let url = "";
+      if(opt){ //what
+        url = 'https://wa.me/+523346502871';
+      }else{ //twitter
+        
+        url = 'https://twitter.com/Basher_dev';
+      }
+      window.open(url, '_blank');
+    }, 400);
   }
 }
