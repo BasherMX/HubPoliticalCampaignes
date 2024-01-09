@@ -11,9 +11,8 @@ export class ContactComponent {
     setTimeout(() => {
       let url = "";
       if(opt){ //what
-        url = 'https://wa.me/+523346502871';
+        url = 'https://wa.me/+523346502871?text=Hola!+vengo+de+tu+portafolio+me+gustaría+más+información+sobre+una+página+web';
       }else{ //twitter
-        
         url = 'https://twitter.com/Basher_dev';
       }
       window.open(url, '_blank');

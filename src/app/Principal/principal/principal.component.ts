@@ -13,7 +13,7 @@ export class PrincipalComponent {
     {
       imageUrl: '../../../assets/principal/Riestra.png',
       title: 'Web de Campaña',
-      link: 'https://elecciones-fs7bt7tj3-bashermx.vercel.app/',
+      link: 'https://elecciones-git-master-bashermx.vercel.app?_vercel_share=Djl6AOI3LJeezYrO1I0nrgXkUGgIAUxg',
     },
     {
       imageUrl: '../../../assets/principal/moni+.png',
