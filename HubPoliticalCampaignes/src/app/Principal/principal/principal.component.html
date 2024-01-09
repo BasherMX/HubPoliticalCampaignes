@@ -1,0 +1,211 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container flex-column mt-4 mb-5 p-5 d-flex align-items-center justify-content-center">
+    <h1 class="title">Portafolio</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" *ngFor="let card of cardsData">
+            <div class="card">
+                <img [src]="card.imageUrl" (click)="abrirEnlace(card.link)" class="card-img-top" alt="Card Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ card.title }}</h5>
+                    <div class="butons">
+                        <button class="btn btn-secondary" (click)="abrirEnlace(card.link)">Visitar</button>
+                        <button class="btn btn-secondary" style="background-color: #8C52FF;"
+                            (click)="abrirEnlace(cotizar+replaceSp(card.title))">Contratar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container prices">
+    <h2 class="title mb-5">PAQUETES</h2>
+    <h3 class="title title_min mb-5">Páginas webs políticas</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card_nr">
+                <div class="price_title">BÁSICO</div>
+                <div class="price_price">$25K</div>
+                <div class="price_price_description">($25,000.00*)</div>
+                <div class="price_description">
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Diseño web Básico</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Dominio Genérico</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Soporte Técnico por email</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Iconos de redes sociales</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="price_recomend">RECOMENDADO</div>
+                <div class="price_title">AVANZADO</div>
+                <div class="price_price price_discount">$35K</div>
+                <div class="price_price">$30K</div>
+                <div class="price_price_description">($30,000.00*)</div>
+                <div class="price_description">
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Diseño web 100% a medida <small>(hasta 5 secciones)</small></div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Dominio Personalizado **</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Soporte Técnico prioritario durante toda la campaña</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Integración de redes sociales</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Contador de tiempo para elección</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Mapa Interactivo</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Version Móvil</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Página de agradecimiento al ganar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card_nr">
+                <div class="price_title">PREMIUM</div>
+                <div class="price_price">$45K</div>
+                <div class="price_price_description">($45,000.00*)</div>
+                <div class="price_description">
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Diseño web 100% a medida <small>(hasta 9 secciones)</small></div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Dominio Personalizado **</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Soporte Técnico <strong>24/7</strong> durante toda la campaña</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Integración de redes sociales</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Contador de tiempo para elección</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Mapa Interactivo</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Carrusel de imagenes</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Galería</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Version Móvil</div>
+                    </div>
+                    <div class="price_item">
+                        <div class="price_icon">
+                            <img src="../../../assets/principal/checkIcon.svg" alt="checkicon">
+                        </div>
+                        <div class="price_text">Página de agradecimiento al ganar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="declarations">
+        <span>
+            <small>
+                *Precios Sujetos a cambios sin previo aviso, actualizado al 9 de enero 2024.
+            </small>
+        </span>
+        <br>
+        <span>
+            <small>
+                **El dominio personalizado esta sujeto a la disponibilidad en el Sistema de nombres de dominio, terminaciones (.mx) pueden aplicar un incremento al precio final.
+            </small>
+        </span>
+    </div>
+</div>
+
+<app-contact style="padding-top: 15rem;"></app-contact>
+
+<app-footer ></app-footer>
