@@ -34,7 +34,7 @@ export class AdStokeComponent {
 
     const precioSemanal = precioPorPublicacion * this.cantidadPublicaciones;
     const precioMensual = precioSemanal * 4; // Se asume 4 semanas en un mes
-    const precioCampCompleta = precioMensual * 6.4;// * (1 - descuento); // Se asume 6.4 meses de campaña y se aplica el descuento
+    const precioCampCompleta = precioSemanal * 6.4;// * (1 - descuento); // Se asume 6.4 meses de campaña y se aplica el descuento
 
     this.precioSemanal = precioSemanal.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     this.precioMensual = precioMensual.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
