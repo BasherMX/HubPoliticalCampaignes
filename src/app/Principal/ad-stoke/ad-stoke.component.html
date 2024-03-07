@@ -2,7 +2,7 @@
     <h2 class="title mb-5">ARMA TU</h2>
     <h3 class="title title_min">Paquete de anuncios</h3>
     <h4 class="title title_min title_min_rds mb-5">Facebook e Instagram</h4>
-    <div class="row">
+    <div class="row inputsData">
         <div class="col col_data">
             <label for="personas">¿A cuántas personas quieres llegar?</label>
             <select id="personas" [(ngModel)]="selectedCantidadPersonas" (change)="calcularPrecios()">
@@ -35,7 +35,10 @@
         </div>
         <div class="col buttons">
             <a [href]="generateWhatsAppLink()" target="_blank" class="btn btn-primary">Contratar</a>
-            <a [href]="" class="btn btn-secondary">Descarga Cotización</a>
+            <a (click)="generatePDF()" class="btn btn-secondary">Descarga Cotización</a>
         </div>
     </div>
 </div>
+
+
+<meta property="og:image" content="https://basherdev-bashermx.vercel.app/assets/logoForPost.png">

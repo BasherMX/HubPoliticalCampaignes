@@ -84,3 +84,62 @@
 .prices{
     margin-bottom: 5rem;
 }
+
+
+
+/* - - - - - - - - -  */
+@media screen and (max-width: 480px) {
+    .inputsData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    .row{
+
+    
+        .col_data{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+            label{
+                font-size: 1rem;
+                margin-top: 1.2rem;
+            }
+            
+            select, input{
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                outline: 2px solid #BC9AFF;
+                padding: .5rem 2rem;
+                margin-top: 1rem;
+            }
+        }
+    
+        .buttons{
+            width: 100%;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+    
+            a{
+                min-width: 90%;
+                font-weight: 500;
+            }
+                
+            .btn-primary{
+                background-color: #6a39cb;
+                border: none;
+    
+            }
+    
+        }
+           
+    }
+}
