@@ -1,0 +1,86 @@
+@import "../principal/principal.component.less";
+
+.title_min_rds{
+    font-size: 1.9rem;
+    color: #6a39cb;
+    color: #606060;
+    font-weight: normal;
+    margin-top: -.5rem;
+}
+
+
+.row{
+
+    width: 90%;
+    margin: auto;
+
+    .col_data{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red;
+        
+        label{
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: 600;
+        }
+        
+        select, input{
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            outline: 2px solid #BC9AFF;
+            padding: .5rem 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .buttons{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        a{
+            font-weight: 500;
+        }
+            
+        .btn-primary{
+            background-color: #6a39cb;
+            border: none;
+
+        }
+
+    }
+       
+}
+
+.order{
+    display: flex;
+    flex-direction: column;
+
+    .col{
+        table{
+            padding: .5rem 2rem;
+            text-align: center;
+            thead{
+                tr{
+                    th{
+                        width: 33%;
+                    }
+                    
+                }
+
+            }
+
+        }
+    }
+}
+
+.prices{
+    margin-bottom: 5rem;
+}

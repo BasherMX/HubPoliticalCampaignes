@@ -8,6 +8,8 @@ import { PricingComponent } from './Principal/pricing/pricing.component';
 import { NavBarComponent } from './Common/nav-bar/nav-bar.component';
 import { FooterComponent } from './Common/footer/footer.component';
 import { ContactComponent } from './Principal/contact/contact.component';
+import { AdStokeComponent } from './Principal/ad-stoke/ad-stoke.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ContactComponent } from './Principal/contact/contact.component';
     PricingComponent,
     NavBarComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    AdStokeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
