@@ -10,13 +10,14 @@ import { jsPDF } from 'jspdf';
 })
 export class AdStokeComponent {
   cantidadesPersonas: { personas: string, precio: string }[] = [
-    { personas: '1,6 mil - 4,6 mil personas', precio: '580' },
-    { personas: '3,1 mil - 9,1 mil personas', precio: '1160' },
-    { personas: '4,7 mil - 13,7 mil personas', precio: '1740' },
-    { personas: '7,9 mil - 22,8 mil personas', precio: '2900' },
-    { personas: '23,6 mil - 68,3 mil personas', precio: '8700' },
-    { personas: '39,4 mil - 113,8 mil personas', precio: '14500' }
+    { personas: '1,6 mil - 4,6 mil personas', precio: '$535.71' },
+    { personas: '3,1 mil - 9,1 mil personas', precio: '$1,071.43' },
+    { personas: '4,7 mil - 13,7 mil personas', precio: '$1,607.14' },
+    { personas: '7,9 mil - 22,8 mil personas', precio: '$2,678.57' },
+    { personas: '23,6 mil - 68,3 mil personas', precio: '$8,035.71' },
+    { personas: '39,4 mil - 113,8 mil personas', precio: '$13,392.86' }
   ];
+  
 
   selectedCantidadPersonas: string = this.cantidadesPersonas[0].personas; // Valor predeterminado
   cantidadPublicaciones: number = 0; // Valor predeterminado
