@@ -9,7 +9,7 @@ const routes: Routes = [
    // Ruta que acepta un parámetro 'name' desde la URL
    { path: 'DisfrazFest/:name', component: HalloweenComponent },
    // Ruta que redirige a 'Fiesta' con un nombre por defecto si no se proporciona uno
-   { path: 'DisfrazFest', redirectTo: 'Fiesta/', pathMatch: 'full' },
+   { path: 'DisfrazFest', redirectTo: 'DisfrazFest/', pathMatch: 'full' },
 ];
 
 @NgModule({
