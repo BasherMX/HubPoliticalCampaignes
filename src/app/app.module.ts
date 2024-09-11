@@ -10,6 +10,7 @@ import { FooterComponent } from './Common/footer/footer.component';
 import { ContactComponent } from './Principal/contact/contact.component';
 import { AdStokeComponent } from './Principal/ad-stoke/ad-stoke.component';
 import { FormsModule } from '@angular/forms';
+import { HalloweenComponent } from './Extra/halloween/halloween.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     NavBarComponent,
     FooterComponent,
     ContactComponent,
-    AdStokeComponent
+    AdStokeComponent,
+    HalloweenComponent
   ],
   imports: [
     BrowserModule,
